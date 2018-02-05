@@ -2,13 +2,16 @@
   "name": "ace",
   "version": "0.0.0",
   "license": "MIT",
+  "main": "main.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "electron": "electron .",
+    "electron-build": "ng build  --target=production --environment=prod --output-path dist/ --base-href && electron ."
   },
   "private": true,
   "dependencies": {
@@ -22,7 +25,9 @@
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
     "core-js": "^2.4.1",
+    "electron": "^1.7.12",
     "rxjs": "^5.5.6",
+    "save-dev": "^2.0.0",
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
