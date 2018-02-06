@@ -1,33 +1,48 @@
-const { app, BrowserWindow } = require('electron')
-let win;
-function createWindow () {
-  // Create the browser window.
-  win = new BrowserWindow({
-    width: 600, 
-    height: 600,
-    backgroundColor: '#ffffff',
-    icon: `file://${__dirname}/dist/assets/logo.png`
-  })
-  win.loadURL(`file://${__dirname}/dist/index.html`)
-  //// uncomment below to open the DevTools.
-  // win.webContents.openDevTools()
-  // Event when the window is closed.
-  win.on('closed', function () {
-    win = null
-  })
-}
-// Create window on electron intialization
-app.on('ready', createWindow)
-// Quit when all windows are closed.
-app.on('window-all-closed', function () {
-  // On macOS specific close process
-  if (process.platform !== 'darwin') {
-    app.quit()
+const {app, BrowserWindow} = require('electron')
+const path = require('path');
+const url = require('url');
+
+require('dotenv').config();
+require('electron-reload')(__dirname, {
+  electron: require('${__dirname}/../../node_modules/electron')
+});
+
+let win = null;
+
+app.on('ready', function () {
+
+  // Initialize the window to our specified dimensions
+  win = new BrowserWindow({width: 1280, height: 712});
+
+  // Specify entry point
+  if (process.env.PACKAGE === 'true'){
+    win.loadURL(url.format({
+      pathname: path.join(__dirname, 'dist/index.html'),
+      protocol: 'file:',
+      slashes: true
+    }));
+  } else {
+    win.loadURL(process.env.HOST);
+    win.webContents.openDevTools();
   }
-})
-app.on('activate', function () {
-  // macOS specific close process
+  // Specify entry point
+  win.loadURL('http://localhost:4200');
+
+  // Remove window once app is closed
+  win.on('closed', function () {
+    win = null;
+  });
+
+});
+
+app.on('activate', () => {
   if (win === null) {
     createWindow()
   }
 })
+
+app.on('window-all-closed', function () {
+  if (process.platform != 'darwin') {
+    app.quit();
+  }
+});
