@@ -10,8 +10,21 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "desktop": "ng build --base-href /dist/ && electron .",
-    "electron": "electron ."
+    
+    "electron": "electron .",
+    "electron-run": "ng build --prod && electron .",
+    "electron-run-windows": "",
+    "electron-run-mac": "",
+    "electron-run-linux": "",
+    "electron-build": "electron-packager . --all --overwrite",
+    "electron-build-windows": "electron-packager . --platform=win32 --overwrite",
+    "electron-build-mac": "electron-packager . --platform=darwin --overwrite",
+    "electron-build-linux": "electron-packager . --platform=arm64 --overwrite",
+
+    "cordova-run-android": "cd cordova && cordova run android",
+    "cordova-run-ios": "cd cordova && cordova run android",
+    "cordova-build-android": "cd cordova && cordova build android",
+    "cordova-build-ios": "cd cordova && cordova build android"
   },
   "private": true,
   "dependencies": {
@@ -27,6 +40,7 @@
     "core-js": "^2.4.1",
     "dotenv": "^5.0.0",
     "electron": "^1.7.12",
+    "electron-livereload": "0.0.2",
     "electron-reload": "^1.2.2",
     "rxjs": "^5.5.6",
     "save-dev": "^2.0.0",
@@ -40,6 +54,7 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "^4.0.1",
+    "electron-packager": "^10.1.2",
     "jasmine-core": "~2.8.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~2.0.0",

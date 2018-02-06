@@ -15,19 +15,12 @@ app.on('ready', function () {
   win = new BrowserWindow({width: 1280, height: 712});
 
   // Specify entry point
-  if (process.env.PACKAGE === 'true'){
-    win.loadURL(url.format({
-      pathname: path.join(__dirname, 'dist/index.html'),
-      protocol: 'file:',
-      slashes: true
-    }));
-  } else {
+  if (process.env.PACKAGE === 'false'){
     win.loadURL(process.env.HOST);
-    win.webContents.openDevTools();
+  } else {
+    win.loadURL(`file://${__dirname}/dist/index.html`);
+    //win.webContents.openDevTools();
   }
-  // Specify entry point
-  win.loadURL('http://localhost:4200');
-
   // Remove window once app is closed
   win.on('closed', function () {
     win = null;
