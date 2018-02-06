@@ -40,7 +40,6 @@
     "core-js": "^2.4.1",
     "dotenv": "^5.0.0",
     "electron": "^1.7.12",
-    "electron-livereload": "0.0.2",
     "electron-reload": "^1.2.2",
     "rxjs": "^5.5.6",
     "save-dev": "^2.0.0",
