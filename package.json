@@ -19,7 +19,7 @@
     "electron-build": "electron-packager . --all --overwrite",
     "electron-build-windows": "electron-packager . --platform=win32 --overwrite",
     "electron-build-mac": "electron-packager . --platform=darwin --overwrite",
-    "electron-build-linux": "electron-packager . --platform=arm64 --overwrite",
+    "electron-build-linux": "electron-packager . --platform=linux --overwrite",
 
     "cordova-run-android": "cd cordova && cordova run android",
     "cordova-run-ios": "cd cordova && cordova run android",
