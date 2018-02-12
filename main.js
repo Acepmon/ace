@@ -12,11 +12,11 @@ let win = null;
 app.on('ready', function () {
 
   // Initialize the window to our specified dimensions
-  win = new BrowserWindow({width: 1280, height: 712});
+  win = new BrowserWindow({width: 1280, height: 712, icon:'src/favicon.ico'});
 
   // Specify entry point
   if (process.env.PACKAGE === 'false'){
-    win.loadURL(process.env.HOST);
+    win.loadURL('http://127.0.0.1:4200');
   } else {
     win.loadURL(`file://${__dirname}/dist/index.html`);
     //win.webContents.openDevTools();

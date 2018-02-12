@@ -17,7 +17,7 @@ Live Build:
 
 For Cordova, run `npm run cordova-live-android`.
 
-For Electron, run `npm run electron-run` after changing PACKAGE from `.env` file to `false`.
+For Electron, run `npm run electron-live`.
 
 If live reload doesn't work, make sure you have a dev server running. (By `ng serve`).
 

@@ -5,6 +5,7 @@
 /dist-server
 /tmp
 /out-tsc
+/ACE-win32-x64
 
 # dependencies
 node_modules/
