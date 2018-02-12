@@ -22,7 +22,7 @@
     "electron-run": "npm run switch-desktop && npm run ele-build && ng build --prod && electron .",
     "electron-live": "npm run switch-desktop && npm run ele-live && ng build --prod && electron .",
     "electron-build": "npm run switch-desktop && electron-packager . --all --overwrite --ignore=cordova",
-    "electron-build-windows": "npm run switch-desktop && electron-packager . --platform=win32 --overwrite --ignore=cordova",
+    "electron-build-windows": "npm run switch-desktop && electron-packager . --platform=win32 --overwrite --ignore=cordova --icon=src/favicon.ico",
     "electron-build-mac": "npm run switch-desktop && electron-packager . --platform=darwin --overwrite --ignore=cordova",
     "electron-build-linux": "npm run switch-desktop && electron-packager . --platform=linux --overwrite --ignore=cordova",
     "cordova-run-android": "npm run switch-mobile && npm run cordova-build && npm run cordova-android && npm run switch-desktop",
@@ -47,6 +47,9 @@
     "dotenv": "^5.0.0",
     "electron": "^1.7.12",
     "electron-reload": "^1.2.2",
+    "jquery": "^3.3.1",
+    "jsdom": "^9.12.0",
+    "ngx-electron": "^1.0.4",
     "rxjs": "^5.5.6",
     "save-dev": "^2.0.0",
     "zone.js": "^0.8.19"

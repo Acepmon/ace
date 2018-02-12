@@ -1,0 +1,35 @@
+#titleBar{
+  -webkit-user-select: none;
+	-webkit-app-region: drag;
+
+	padding: 6px 8px;
+	background-color: #363636;
+	color: #f7f7f7;
+	font-family: sans-serif;
+	font-size: 16px;
+
+	text-align: center;
+}
+#toggle{
+	position: absolute;
+}
+#toggle > button{
+	-webkit-app-region: no-drag;
+	border: none;
+	width: 16px;
+	height: 16px;
+	border-radius: 50px;
+	outline: none;
+}
+#close{
+	background-color: #be504b;
+}
+#min{
+	background-color: #bd9233;
+}
+#max{
+	background-color: #22993c;
+}
+
+#title{
+}

@@ -12,7 +12,7 @@ let win = null;
 app.on('ready', function () {
 
   // Initialize the window to our specified dimensions
-  win = new BrowserWindow({width: 1280, height: 712, icon:'src/favicon.ico'});
+  win = new BrowserWindow({width: 1280, height: 712, icon:'src/favicon.ico', frame: false});
 
   // Specify entry point
   if (process.env.PACKAGE === 'false'){
