@@ -11,21 +11,13 @@ Run `npm run cordova-run-ios` to test on ios. You may need XCode.
 
 Run `npm run elecron-run` to test on desktop.
 
-## Live build and Production test
+## Live build
 
-On cordova:
+Live Build:
 
-For production build, change `content src` to `index.html` in `config.xml`.
+For Cordova, run `npm run cordova-live-android`.
 
-For live reload during development, change `content src` to `http://10.0.2.2:4200/index.html` in `config.xml`.
-
-
-On electron:
-
-For production build, change PACKAGE from `.env` file to `true`.
-
-For live reload during development, change PACKAGE from `.env` file to `false`.
-
+For Electron, run `npm run electron-run` after changing PACKAGE from `.env` file to `false`.
 
 If live reload doesn't work, make sure you have a dev server running. (By `ng serve`).
 
@@ -35,7 +27,7 @@ NOTE: Cordova and Electron build doesn't work simultaneously.
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-Run `npm run cordova-build-android` to build apk file. Built file will be stored in `cordova/platforms/android/app/build/outputs/apk/debug` with the name `app-debug`. Don't forget to change `content src` to just `index.html` in `config.xml`.
+Run `npm run cordova-build-android` to build apk file. Built file will be stored in `cordova/platforms/android/app/build/outputs/apk/debug` with the name `app-debug`.
 
 Run `npm run electron-build-platform` to build desktop app after changing PACKAGE from `.env` file to `true`.
 
