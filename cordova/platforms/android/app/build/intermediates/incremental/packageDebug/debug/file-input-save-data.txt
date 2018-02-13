@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Feb 13 17:29:01 ULAT 2018
+#Tue Feb 13 20:56:15 ULAT 2018
 25.file=C\:\\Development\\ace\\cordova\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\mipmap-hdpi-v4\\icon.png
 25.base=C\:\\Development\\ace\\cordova\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 22.set=ANDROID_RESOURCE

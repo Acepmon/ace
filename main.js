@@ -19,7 +19,7 @@ app.on('ready', function () {
 
   // Specify entry point
   if (process.env.PACKAGE === 'false'){
-    win.loadURL('http://127.0.0.1:4200');
+    win.loadURL(process.env.HOST);
   } else {
     win.loadURL(`file://${__dirname}/dist/index.html`);
     //win.webContents.openDevTools();

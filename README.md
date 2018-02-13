@@ -15,6 +15,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Run `npm run cordova-run-android` to test on android. You need android device or AVD.
 Run `npm run cordova-run-ios` to test on ios. You may need XCode.
+To change IP address, change `HOST` from `.env` file.
 
 Run `npm run elecron-run` to test on desktop.
 
