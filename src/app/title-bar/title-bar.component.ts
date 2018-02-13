@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ElectronService } from 'ngx-electron';
+import { environment } from '../../environments/environment';
 
 @Component({
 	selector: 'app-title-bar',
@@ -8,6 +9,7 @@ import { ElectronService } from 'ngx-electron';
 })
 export class TitleBarComponent implements OnInit {
 
+	public environment = environment;
 	public win;
 
 	constructor(private electronService: ElectronService) { }

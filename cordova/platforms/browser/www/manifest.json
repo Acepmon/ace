@@ -1,11 +1,11 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "HelloCordova",
-  "short_name": "HelloCordova",
+  "name": "ACE",
+  "short_name": "ACE",
   "version": "io.cordova.hellocordova",
-  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "description": "Angular Cordova Electron",
   "author": "Apache Cordova Team",
   "icons": [],
-  "start_url": "index.html"
+  "start_url": "http://10.0.2.2:4200/index.html"
 }

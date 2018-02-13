@@ -1,4 +1,4 @@
-<nav [hidden]="!win" id="titleBar">
+<nav *ngIf="environment.electron_titlebar" [hidden]="!win" id="titleBar">
 
 	<div id="toggle">
 		<button id="close" (click)="close()">

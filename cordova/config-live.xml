@@ -17,13 +17,25 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <preference name="SplashScreen" value="splash" />
+    <preference name="SplashScreenDelay" value="10000" />
     <platform name="android">
         <allow-intent href="market:*" />
+        <icon src="res/icon/android/favicon.ico" />
+        <splash density="land-hdpi" src="res/screen/android/screen-hdpi-landscape.png" />
+        <splash density="land-ldpi" src="res/screen/android/screen-ldpi-landscape.png" />
+        <splash density="land-mdpi" src="res/screen/android/screen-mdpi-landscape.png" />
+        <splash density="land-xhdpi" src="res/screen/android/screen-xhdpi-landscape.png" />
+        <splash density="port-hdpi" src="res/screen/android/screen-hdpi-portrait.png" />
+        <splash density="port-ldpi" src="res/screen/android/screen-ldpi-portrait.png" />
+        <splash density="port-mdpi" src="res/screen/android/screen-mdpi-portrait.png" />
+        <splash density="port-xhdpi" src="res/screen/android/screen-xhdpi-portrait.png" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+    <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
     <engine name="browser" spec="^5.0.3" />
     <engine name="android" spec="^7.0.0" />
 </widget>

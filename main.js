@@ -12,7 +12,10 @@ let win = null;
 app.on('ready', function () {
 
   // Initialize the window to our specified dimensions
-  win = new BrowserWindow({width: 1280, height: 712, icon:'src/favicon.ico', frame: false});
+  win = new BrowserWindow({width: 1280, height: 712, icon:'src/favicon.ico', frame: true});
+  win.hide();
+  win.maximize();
+  win.setMinimumSize(360, 80);
 
   // Specify entry point
   if (process.env.PACKAGE === 'false'){
@@ -21,6 +24,7 @@ app.on('ready', function () {
     win.loadURL(`file://${__dirname}/dist/index.html`);
     //win.webContents.openDevTools();
   }
+
   // Remove window once app is closed
   win.on('closed', function () {
     win = null;
