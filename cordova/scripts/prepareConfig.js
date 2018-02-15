@@ -2,7 +2,7 @@ var fs = require('fs');
 var path = require('path');
 
 var dir = '../'
-var configFile = fs.readFileSync(dir + 'cordova/config-live.xml');
+var configFile = fs.readFileSync(dir + 'cordova/config.xml');
 var envFile = fs.readFileSync(dir + '.env').toString();
 
 var HOST = '';
