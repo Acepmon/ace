@@ -3,11 +3,12 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
 ## Pre requirements
-1. Install cordova globally `npm install -g cordova`
-2. Install electron globally `npm install -g electron`
-3. Open port 4200 on your local machine firewall
-4. Change content source IP in `/cordova/config-live.xml` to your local machine IP
-5. Now you are good to go! just execute command `npm start` to start web version
+1. Install electron globally `npm install -g electron`
+2. Install cordova globally `npm install -g cordova`
+3. Go to `cd cordova` and add platforms using `cordova platform add android`
+4. Open port 4200 on your local machine firewall
+5. Change content source IP in `.env` to your local machine IP
+6. Now you are good to go! just execute command `npm start` to start web version
 
 ## Development server
 
