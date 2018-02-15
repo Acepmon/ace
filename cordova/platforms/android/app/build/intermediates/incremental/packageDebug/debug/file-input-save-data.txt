@@ -1,14 +1,14 @@
 #Internal package file, do not edit.
-#Tue Feb 13 20:56:15 ULAT 2018
+#Thu Feb 15 10:19:25 ULAT 2018
 25.file=C\:\\Development\\ace\\cordova\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\mipmap-hdpi-v4\\icon.png
 25.base=C\:\\Development\\ace\\cordova\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 22.set=ANDROID_RESOURCE
 8.set=ASSET
 11.set=ANDROID_RESOURCE
 27.set=ANDROID_RESOURCE
-30.file=C\:\\Development\\ace\\cordova\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\inline.db6cb0ade5161fb3c1f9.bundle.js
+30.file=C\:\\Development\\ace\\cordova\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-land-ldpi-v4\\screen.png
 14.file=C\:\\Development\\ace\\cordova\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-port-xhdpi-v4\\screen.png
-30.base=C\:\\Development\\ace\\cordova\\platforms\\android\\app\\build\\intermediates\\assets\\debug
+30.base=C\:\\Development\\ace\\cordova\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 14.base=C\:\\Development\\ace\\cordova\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 16.set=ASSET
 count=32
@@ -24,9 +24,9 @@ count=32
 7.set=DEX
 20.base=C\:\\Development\\ace\\cordova\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 10.set=ANDROID_RESOURCE
-31.file=C\:\\Development\\ace\\cordova\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-land-ldpi-v4\\screen.png
+31.file=C\:\\Development\\ace\\cordova\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\inline.db6cb0ade5161fb3c1f9.bundle.js
 15.file=C\:\\Development\\ace\\cordova\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\main.2d17b440c28ff6f155d4.bundle.js
-31.base=C\:\\Development\\ace\\cordova\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
+31.base=C\:\\Development\\ace\\cordova\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 15.base=C\:\\Development\\ace\\cordova\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 26.set=ASSET
 7.file=C\:\\Development\\ace\\cordova\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0\\classes.dex
@@ -37,7 +37,7 @@ count=32
 1.file=C\:\\Development\\ace\\cordova\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\cordova-js-src\\platform.js
 1.base=C\:\\Development\\ace\\cordova\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 1.set=ASSET
-31.set=ANDROID_RESOURCE
+31.set=ASSET
 21.file=C\:\\Development\\ace\\cordova\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\resources.arsc
 21.base=C\:\\Development\\ace\\cordova\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 20.set=ASSET
@@ -60,7 +60,7 @@ count=32
 22.base=C\:\\Development\\ace\\cordova\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 0.set=ASSET
 19.set=ANDROID_RESOURCE
-30.set=ASSET
+30.set=ANDROID_RESOURCE
 9.file=C\:\\Development\\ace\\cordova\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\mipmap-xhdpi-v4\\icon.png
 5.set=ASSET
 18.file=C\:\\Development\\ace\\cordova\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-land-mdpi-v4\\screen.png
