@@ -40,6 +40,14 @@ Run `npm run cordova-build-android` to build apk file. Built file will be stored
 
 Run `npm run electron-build-platform` to build desktop app after changing PACKAGE from `.env` file to `true`.
 
+## Manually switching environment
+
+Run `npm run switch-platform` to manually switch which platform to test your app on.
+
+By default, it is on `switch-web`. You can use `switch-desktop` and `switch-mobile`, too.
+
+It is recommended to run `npm run switch-web` before git pushing to your repo.
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.

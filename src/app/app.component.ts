@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-//export const template = require('./app.component.desktop.html');
-//export const style = require('./app.component.mobile.css');
 
 @Component({
   selector: 'app-root',
